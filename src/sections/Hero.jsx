@@ -1,6 +1,8 @@
 import HeroText from "../components/HeroText"
 import ParallaxBackground from "../components/ParallaxBackground"
 import { Canvas } from "@react-three/fiber"
+import { Astronaut } from "../components/Astronaut"
+import { OrbitControls } from "@react-three/drei"
 
 const Hero = () => {
   return (
@@ -15,7 +17,8 @@ const Hero = () => {
           }}
         >
             <Canvas>
-
+                <Astronaut />
+                <OrbitControls />
             </Canvas>
         </figure>
     </section>
