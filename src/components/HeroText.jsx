@@ -32,13 +32,24 @@ const HeroText = () => {
                 >
                     A Developer <br /> Dedicated to Crafting
                 </motion.p>
-                <motion.div>
+                <motion.div
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.5 }}
+                >
                     <FlipWords 
                         words={words}
                         className="font-black text-white text-8xl"
                     />
                 </motion.div>
-                <motion.p className="text-4xl font-medium text-neutral-300">
+                <motion.p 
+                  className="text-4xl font-medium text-neutral-300"
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.8 }}
+                >
                     Software Solutions
                 </motion.p>
             </div>
@@ -46,18 +57,43 @@ const HeroText = () => {
 
         {/* Mobile View */}
         <div className="flex- flext-col space-y-6 md:hidden">
-            <motion.p className="text-4xl font-medium">Hi I'm Arya</motion.p>
+            <motion.p 
+              className="text-4xl font-medium"
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 1.1 }}
+            >
+                Hi I'm Arya
+            </motion.p>
             <div>
-                <motion.p className="text-5xl font-black text-neutral-300">
+                <motion.p 
+                  className="text-5xl font-black text-neutral-300"
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.2 }}
+                >
                     Building
                 </motion.p>
-                <motion.div>
+                <motion.div
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.5 }}
+                >
                     <FlipWords 
                         words={words}
                         className="font-bold text-white text-7xl"
                     />
                 </motion.div>
-                <motion.p className="text-4xl font-black text-neutral-300">
+                <motion.p 
+                  className="text-4xl font-black text-neutral-300"
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.8 }}
+                  >
                     Application
                 </motion.p>
             </div>
