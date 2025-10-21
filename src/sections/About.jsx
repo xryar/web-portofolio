@@ -1,6 +1,8 @@
+import { useRef } from "react"
 import Card from "../components/Card"
 
 const About = () => {
+  const grid2Containter = useRef()
   return (
     <section className="c-space section-spacing">
         <h2 className="text-heading">About Me</h2>
@@ -25,11 +27,50 @@ const About = () => {
             </div>
             {/* Grid 2 */}
             <div className="grid-default-color grid-2">
-                <div className="flex items-center justify-center w-full h-full">
+                <div ref={grid2Containter} className="flex items-center justify-center w-full h-full">
                     <p className="flex items-center text-5xl text-gray-500">
                         CODE IS CRAFT
                     </p>
-                    <Card />
+                    <Card 
+                      style={{ rotate: "75deg", top: "30%", left: "20%" }}
+                      text="Clean Code"
+                      containterRef={grid2Containter}
+                    />
+                    <Card
+                      style={{ rotate: "-30deg", top: "60%", left: "45%" }} 
+                      text="Clean Architecture"
+                      containterRef={grid2Containter}
+                    />
+                    <Card
+                      style={{ rotate: "90deg", top: "30%", left: "70%" }}
+                      text="SOLID"
+                      containterRef={grid2Containter}
+                    />
+                    <Card 
+                      style={{ rotate: "-45deg", top: "55%", left: "0%" }}
+                      text="Design Principles"
+                      containterRef={grid2Containter} 
+                    />
+                    <Card 
+                      style={{ rotate: "20deg", top: "10%", left: "38%" }}
+                      text="Design Pattern"
+                      containterRef={grid2Containter}
+                    />
+                    <Card 
+                      style={{ rotate: "30deg", top: "70%", left: "70%" }}
+                      image="assets/logos/git.svg"
+                      containterRef={grid2Containter}
+                    />
+                    <Card 
+                      style={{ rotate: "-45deg", top: "70%", left: "25%" }}
+                      image="assets/logos/github.svg"
+                      containterRef={grid2Containter}
+                    />
+                    <Card 
+                      style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+                      image="assets/logos/javascript.svg"
+                      containterRef={grid2Containter}
+                    />
                 </div>
             </div>
             {/* Grid 3 */}
