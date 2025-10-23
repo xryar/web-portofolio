@@ -2,18 +2,16 @@ import { OrbitingCircles } from "./OrbitingCircles"
 
 export function Frameworks() {
   const skills = [
-    "auth0",
-    "blazor",
-    "cplusplus",
-    "chasrp",
+    "visualstudiocode",
+    "go",
     "css3",
-    "dotnet",
-    "dotnetcore",
+    "kotlin",
+    "java",
     "git",
     "github",
     "html5",
     "javascript",
-    "microsoft",
+    "hapi",
     "react",
     "sqlite",
     "tailwindcss",
@@ -27,8 +25,8 @@ export function Frameworks() {
           <Icon key={index} src={`assets/logos/${skill}.svg`}/>
         ))}
       </OrbitingCircles>
-      <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
-        {skills.map((skill, index) => (
+      <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
+        {skills.reverse().map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`}/>
         ))}
       </OrbitingCircles>
