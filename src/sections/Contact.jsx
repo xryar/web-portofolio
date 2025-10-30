@@ -1,14 +1,51 @@
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+  const serviceKey = import.meta.env.VITE_EMAIL_SERVICE_KEY
+  const templateKey = import.meta.env.VITE_EMAIL_TEMPLATE_KEY
+  const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   })
+
+  const [isLoading, setIsLoading] = useState(false)
+  
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value })
   }
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsLoading(true)
+    try {
+      console.log("Form Submitted", formData)
+      await emailjs.send(
+        serviceKey,
+        templateKey,
+        {
+          from_name: formData.name,
+          to_name: "Arya",
+          from_email: formData.email,
+          to_email: "aryarizki3045@gmail.com",
+          message: formData.message
+        },
+        publicKey
+      )
+
+      setIsLoading(false)
+      alert("Success")
+      setFormData({ name: "", email: "", message: "" })
+    } catch (error) {
+      setIsLoading(false)
+      console.log(error)
+      alert("Failed")
+    }
+  }
+
   return (
     <section className="relative flex items-center c-space section-spacing">
         <div className="flex flex-col items-center justify-center max-w-md 
@@ -22,7 +59,7 @@ const Contact = () => {
               a unique project to life, I'm here to help
             </p>
           </div>
-          <form className="w-full">
+          <form className="w-full" onSubmit={handleSubmit}>
             <div className="mb-5">
               <label htmlFor="name" className="field-label">Fullname</label>
               <input 
@@ -71,7 +108,7 @@ const Contact = () => {
               className="w-full px-1 py-3 text-lg text-center rounded-md 
               cursor-pointer bg-radial from-lavender to-royal hover-animation"
             >
-              Send
+              {!isLoading ? "Send" : "Sending..."}
             </button>
           </form>
         </div>
