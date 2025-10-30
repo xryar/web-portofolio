@@ -16,6 +16,7 @@ const App = () => {
       <Experiences />
       <Testimonial />
       <Contact />
+      <section className='min-h-screen'></section>
       {/* footer */}
     </div>
   )
