@@ -1,6 +1,7 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import Alert from "../components/Alert"
+import { Particles } from "../components/Particles"
 
 const Contact = () => {
   const serviceKey = import.meta.env.VITE_EMAIL_SERVICE_KEY
@@ -14,9 +15,21 @@ const Contact = () => {
   })
 
   const [isLoading, setIsLoading] = useState(false)
+  const [showAlert, setShowAlert] = useState(false)
+  const [alertType, setAlertType] = useState("success")
+  const [alertMessage, setAlertMessage] = useState("")
   
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value })
+  }
+
+  const showAlertMessage = (type, message) => {
+    setAlertType(type)
+    setAlertMessage(message)
+    setShowAlert(true)
+    setTimeout(() => {
+      setShowAlert(false)
+    }, 5000)
   }
   
   const handleSubmit = async (e) => {
@@ -38,18 +51,25 @@ const Contact = () => {
       )
 
       setIsLoading(false)
-      alert("Success")
       setFormData({ name: "", email: "", message: "" })
+      showAlertMessage("Success", "You message has been sent")
     } catch (error) {
-      setIsLoading(false)
       console.log(error)
-      alert("Failed")
+      setIsLoading(false)
+      showAlertMessage("danger", "Something went wrong")
     }
   }
 
   return (
     <section className="relative flex items-center c-space section-spacing">
-      <Alert />
+      <Particles
+        className="absolute inset-0 -z-50"
+        quantity={100}
+        ease={80}
+        color={"#ffffff"}
+        refresh
+      />
+      {showAlert && <Alert type={alertType} text={alertMessage} />}
       <div className="flex flex-col items-center justify-center max-w-md 
         p-5 mx-auto border border-white/10 rounded-2xl bg-primary"
       >
