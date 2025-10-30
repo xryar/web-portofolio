@@ -22,15 +22,15 @@ const Alert = ({ type, text }) => {
             type === "danger" ? "bg-red-500" : "bg-royal"
           } items-center text-indigo-100 leading-none 
           lg:rounded-full flex lg:inline-flex rounded-md p-5`}
+        >
+          <p
+            className={`flex rounded-full ${
+               type === "danger" ? "bg-red-500" : "bg-lavender"
+            }`}
           >
-            <p
-              className={`flex rounded-full ${
-                 type === "danger" ? "bg-red-500" : "bg-lavender"
-              }`}
-            >
-              {type === "danger" ? "Failed" : "Success"}
-            </p>
-            <p className="mr-2 text-left">{text}</p>
+            {type === "danger" ? "Failed" : "Success"}
+          </p>
+          <p className="mr-2 text-left">{text}</p>
         </div>
       </motion.div>   
     </AnimatePresence>
