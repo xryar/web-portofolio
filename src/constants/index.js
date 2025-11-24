@@ -127,7 +127,7 @@ export const myProjects = [
       "Used Glide for fast and cached image loading.",
       "Designed features for item input, stock tracking, and historical usage insights."
     ],
-    href: "",
+    href: "https://github.com/xryar/Inventaris-App",
     logo: "",
     image: "",
     tags: [
@@ -145,38 +145,39 @@ export const myProjects = [
   },
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "Gebung - Personal Finance App",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "A simple and intuitive finance app for tracking expenses, viewing history, receiving spending limit alerts, and generating AI-based expense predictions.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "Built with Room Database for local offline transaction storage.",
+      "Implemented MVVM + LiveData for clean and maintainable architecture.",
+      "Used Coroutines for smooth background processing.",
+      "Integrated TensorFlow Lite to generate spending predictions.",
+      "Visualized data with MPAndroidChart for better financial insights."
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/gebung.png",
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        name: "Kotlin",
+        path: "/assets/logos/kotlin.svg",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        name: "Android App",
+        path: "/assets/logos/android.svg",
       },
       {
         id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        name: "TFLite",
+        path: "/assets/logos/tflite.svg",
       },
       {
         id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
+        name: "Firebase",
+        path: "/assets/logos/firebase.svg",
       },
     ],
   },
