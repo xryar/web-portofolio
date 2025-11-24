@@ -22,7 +22,18 @@ const ProjectDetails = ({
             <button onClick={closeModal} className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500">
                 <img src="assets/close.svg" className="w-6 h-6" />
             </button>
-            <img src={image} alt={title} className="w-full rounded-t-2xl" />
+            {image ? (
+                <img 
+                  src={image} 
+                  alt={title} 
+                  className="w-full rounded-t-2xl" 
+                />
+              ) : (
+                <div className="w-full h-48 rounded-t-2xl bg-gray-800 flex items-center justify-center">
+                  <span className="text-neutral-500">No Preview Available</span>
+                </div>
+              )
+            }
             <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
                 <p className="mb-3 font-normal text-neutral-400">{description}</p>

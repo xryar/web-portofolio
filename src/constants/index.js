@@ -51,7 +51,7 @@ export const myProjects = [
       "Secured all gRPC communication with JWT authentication.",
       "Designed Protocol Buffer contracts for clean and consistent APIs."
     ],
-    href: "",
+    href: "https://github.com/xryar/clean-furniture-backend-service",
     logo: "",
     image: "",
     tags: [
@@ -79,38 +79,39 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "C++ Game Engine",
+    title: "Tabir (Tangan Bicara)",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "An AI-driven web application that translates sign language into real-time text using Computer Vision and Deep Learning. I developed the backend system using Hapi.js to handle authentication, data management, and real-time prediction integration.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "Built a secure backend REST API using Hapi.js with modular architecture.",
+      "Implemented JWT authentication and refresh token workflows.",
+      "Integrated PostgreSQL for storing user and prediction data.",
+      "Supported real-time AI inference from the frontend (TensorFlow.js).",
+      "Collaborated with AI and frontend teams to align API flows and improve system reliability."
     ],
-    href: "",
+    href: "https://github.com/CC25CF093",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/tabir-homepage.png",
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        name: "HTML",
+        path: "/assets/logos/html5.svg",
       },
       {
         id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "JavaScripts",
+        path: "/assets/logos/javascript.svg",
       },
       {
         id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
       },
       {
         id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
+        name: "Hapi.js",
+        path: "/assets/logos/hapi.svg",
       },
     ],
   },
@@ -128,7 +129,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "",
     tags: [
       {
         id: 1,
