@@ -79,43 +79,6 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Blazor Web App",
-    description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/blazor-app.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
     title: "C++ Game Engine",
     description:
       "A lightweight C++ game engine designed for 2D and 3D game development.",
@@ -148,6 +111,34 @@ export const myProjects = [
         id: 4,
         name: "Microsoft",
         path: "/assets/logos/microsoft.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "InventarisHub",
+    description:
+      "InventarisHub is an Android-based inventory management application designed to help users efficiently manage items, track stock, and view detailed usage history. The app is built with modern Android development tools and follows clean architectural patterns to ensure scalability and maintainability.",
+    subDescription: [
+      "Built using Kotlin with MVVM and LiveData for reactive and maintainable UI logic.",
+      "Implemented Navigation Component with a single-activity multi-fragment architecture.",
+      "Integrated REST API via Retrofit and Coroutines for efficient asynchronous data handling.",
+      "Used Glide for fast and cached image loading.",
+      "Designed features for item input, stock tracking, and historical usage insights."
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/blazor-app.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Kotlin",
+        path: "/assets/logos/kotlin.svg",
+      },
+      {
+        id: 2,
+        name: "Android",
+        path: "/assets/logos/android.svg",
       },
     ],
   },
