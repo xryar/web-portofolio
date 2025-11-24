@@ -1,38 +1,40 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Golang Online Soccer Field Microservice Backend System",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A microservices-based online futsal field booking system built with Golang, Kafka, and Midtrans. Each service operates independently with its own responsibility to ensure scalability, maintainability, and efficient distributed communication.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+       "Developed a distributed system using the microservices architecture pattern with independent services for users, fields, orders, and payments.",
+       "Implemented service-to-service communication using Apache Kafka to handle booking events and ensure asynchronous, reliable message processing.",
+       "Built multiple backend services in Golang, each responsible for a specific domain (User, Field, Payment, and Order Management).",
+       "Integrated Midtrans API for secure and seamless online payment processing.",
+       "Designed services to be horizontally scalable, maintainable, and easy to extend for future features.",
+       "Applied clean architecture principles, domain separation, and modular repository patterns across services."
     ],
-    href: "",
+    href: "https://github.com/xryar/golang-online-soccer-field",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/golang-online-soccer-field-flow.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Go",
+        path: "/assets/logos/go.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Postgre SQL",
+        path: "/assets/logos/postgresql.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "Google Cloud",
+        path: "/assets/logos/googlecloud.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Apache Kafka",
+        path: "/assets/logos/kafka.png",
       },
     ],
   },
