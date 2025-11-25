@@ -40,6 +40,45 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "E-Commerce Backend Service with Golang GRPC",
+    description:
+      "A high-performance e-commerce backend built using Golang with a gRPC-based architecture. The system includes product, user, cart, and order management, fully integrated with Supabase PostgreSQL and Xendit Payment Gateway for secure and seamless online transactions.",
+    subDescription: [
+      "Built a monolithic gRPC backend using Golang for high performance and strict type safety.",
+      "Implemented product, user authentication, cart, and order modules.",
+      "Integrated Xendit API for secure payment flows.",
+      "Used Supabase PostgreSQL with optimized schema design.",
+      "Secured all gRPC communication with JWT authentication.",
+      "Designed Protocol Buffer contracts for clean and consistent APIs."
+    ],
+    href: "https://github.com/xryar/clean-furniture-backend-service",
+    logo: "",
+    image: "/assets/projects/golang-grpc.png",
+    tags: [
+      {
+        id: 1,
+        name: "Go",
+        path: "/assets/logos/go.svg",
+      },
+      {
+        id: 2,
+        name: "Supabase",
+        path: "/assets/logos/supabase.svg",
+      },
+      {
+        id: 3,
+        name: "Postgre SQL",
+        path: "/assets/logos/postgresql.svg",
+      },
+      {
+        id: 4,
+        name: "gRPC",
+        path: "/assets/logos/grpc.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Tabir (Tangan Bicara)",
     description:
       "An AI-driven web application that translates sign language into real-time text using Computer Vision and Deep Learning. I developed the backend system using Hapi.js to handle authentication, data management, and real-time prediction integration.",
@@ -77,7 +116,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Gebung - Personal Finance App",
     description:
       "A simple and intuitive finance app for tracking expenses, viewing history, receiving spending limit alerts, and generating AI-based expense predictions.",
@@ -115,45 +154,6 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
-    title: "E-Commerce Backend Service with Golang GRPC",
-    description:
-      "A high-performance e-commerce backend built using Golang with a gRPC-based architecture. The system includes product, user, cart, and order management, fully integrated with Supabase PostgreSQL and Xendit Payment Gateway for secure and seamless online transactions.",
-    subDescription: [
-      "Built a monolithic gRPC backend using Golang for high performance and strict type safety.",
-      "Implemented product, user authentication, cart, and order modules.",
-      "Integrated Xendit API for secure payment flows.",
-      "Used Supabase PostgreSQL with optimized schema design.",
-      "Secured all gRPC communication with JWT authentication.",
-      "Designed Protocol Buffer contracts for clean and consistent APIs."
-    ],
-    href: "https://github.com/xryar/clean-furniture-backend-service",
-    logo: "",
-    image: "",
-    tags: [
-      {
-        id: 1,
-        name: "Go",
-        path: "/assets/logos/go.svg",
-      },
-      {
-        id: 2,
-        name: "Supabase",
-        path: "/assets/logos/supabase.svg",
-      },
-      {
-        id: 3,
-        name: "Postgre SQL",
-        path: "/assets/logos/postgresql.svg",
-      },
-      {
-        id: 4,
-        name: "gRPC",
-        path: "/assets/logos/grpc.svg",
-      },
-    ],
-  },
-  {
     id: 5,
     title: "InventarisHub",
     description:
@@ -178,43 +178,6 @@ export const myProjects = [
         id: 2,
         name: "Android App",
         path: "/assets/logos/android.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
       },
     ],
   },
