@@ -227,8 +227,10 @@ export const experiences = [
     job: "Self-Employed",
     date: "2024-Present",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Studied Golang independently for over 1 year to strengthen backend development fundamentals.",
+      "Created various backend projects such as REST APIs, gRPC services, and microservice implementations.",
+      "Improved Android development skills by switching from XML layouts to Jetpack Compose.",
+      "Continuously learning and building real-world projects to sharpen problem-solving and engineering skills."
     ],
   },
 ];
