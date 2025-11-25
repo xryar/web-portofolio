@@ -16,8 +16,13 @@ function Navigation() {
                 </a>
             </li>
             <li className="nav-li">
-                <a className="nav-link" href="#work">
-                    Work
+                <a className="nav-link" href="#project">
+                    Projects
+                </a>
+            </li>
+            <li className="nav-li">
+                <a className="nav-link" href="#experience">
+                    Experience
                 </a>
             </li>
             <li className="nav-li">
@@ -38,7 +43,7 @@ const Navbar = () => {
                 <a 
                     href="/" 
                     className="text-xl font-bold transition-colors text-neutral-400 hover:text-white">
-                        Arya
+                        Arya Rizki
                 </a>
                 <button 
                     onClick={() => setIsOpen(!isOpen)} 
