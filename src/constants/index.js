@@ -167,7 +167,7 @@ export const myProjects = [
     ],
     href: "https://github.com/xryar/Inventaris-App",
     logo: "",
-    image: "",
+    image: "/assets/projects/inventaris-app.png",
     tags: [
       {
         id: 1,
