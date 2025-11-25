@@ -1,32 +1,32 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react"
-import { motion } from "motion/react"
+import { AnimatePresence, motion } from "motion/react"
 
-function Navigation() {
+function Navigation({ onClick }) {
     return (
         <ul className="nav-ul">
             <li className="nav-li">
-                <a className="nav-link" href="#home">
+                <a className="nav-link" href="#home" onClick={onClick}>
                     Home
                 </a>
             </li>
             <li className="nav-li">
-                <a className="nav-link" href="#about">
+                <a className="nav-link" href="#about" onClick={onClick}>
                     About
                 </a>
             </li>
             <li className="nav-li">
-                <a className="nav-link" href="#project">
+                <a className="nav-link" href="#project" onClick={onClick}>
                     Projects
                 </a>
             </li>
             <li className="nav-li">
-                <a className="nav-link" href="#experience">
+                <a className="nav-link" href="#experience" onClick={onClick}>
                     Experience
                 </a>
             </li>
             <li className="nav-li">
-                <a className="nav-link" href="#contact">
+                <a className="nav-link" href="#contact" onClick={onClick}>
                     Contact
                 </a>
             </li>
@@ -37,7 +37,7 @@ function Navigation() {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
+    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40 py-4 sm:py-4">
         <div className="mx-auto c-space max-w-7xl">
             <div className="flex items-center justify-between py-2 sm:py-0">
                 <a 
@@ -55,23 +55,26 @@ const Navbar = () => {
                         />
                 </button>
                 <nav className="hidden sm:flex">
-                    <Navigation/>
+                    <Navigation />
                 </nav>
             </div>
         </div>
-        {isOpen && (
-            <motion.div 
-                className="block overflow-hidden text-center sm:hidden"
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                style={{ maxHeight: "100vh" }}
-                transition={{ duration:1 }}
-                >
-                    <nav className="pb-5">
-                        <Navigation/>
-                    </nav>
-            </motion.div>
-        )}
+        <AnimatePresence>
+            {isOpen && (
+                <motion.div 
+                    className="block overflow-hidden text-center sm:hidden"
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    style={{ maxHeight: "100vh" }}
+                    transition={{ duration: 0.3 }}
+                    >
+                        <nav className="pb-5">
+                            <Navigation onClick={() => setIsOpen(!isOpen)}/>
+                        </nav>
+                </motion.div>
+            )}
+        </AnimatePresence>
     </div>
   )
 }

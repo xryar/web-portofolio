@@ -60,6 +60,10 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 .c-space {
   @apply sm:px-10 px-5 lg:px-15;
 }
