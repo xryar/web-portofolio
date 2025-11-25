@@ -198,27 +198,28 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Android Developer",
-    job: "Bangkit Academy",
-    date: "Feb 2024 - Jul 2024",
-    contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
-    ],
-  },
-  {
     title: "Fullstack Developer",
     job: "Coding Camp powered by DBS Foundation",
     date: "Feb 2025 - Jul 2025",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Selected from 66,000+ applicants to join an intensive fullstack web development program.",
+      "Developed Tabir (Tangan Bicara), an AI-driven web application that translates sign language into real-time text.",
+      "Built backend services using Hapi.js with JWT authentication, validation, and PostgreSQL integration.",
+      "Implemented frontend components with HTML, CSS, JavaScript, and REST API integration.",
+      "Collaborated in a cross-functional team using Agile practices to design and test core features.",
+      "Served as a peer tutor, assisting fellow participants with technical challenges and coursework."
+    ],
+  },
+  {
+    title: "Android Developer",
+    job: "Bangkit Academy",
+    date: "Feb 2024 - Jul 2024",
+    contents: [
+      "Selected from 60,000+ applicants for a 6-month Android development program by Google, GoTo, and Traveloka.",
+      "Developed Gebung, an AI-powered financial management app with monthly expense prediction using TensorFlow Lite.",
+      "Built Android features with Kotlin, MVVM architecture, LiveData, Room Database, and Coroutines.",
+      "Integrated RESTful APIs using Retrofit and implemented scalable, clean application architecture.",
+      "Applied machine learning concepts to real-world Android applications."
     ],
   },
   {
