@@ -40,6 +40,82 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "Tabir (Tangan Bicara)",
+    description:
+      "An AI-driven web application that translates sign language into real-time text using Computer Vision and Deep Learning. I developed the backend system using Hapi.js to handle authentication, data management, and real-time prediction integration.",
+    subDescription: [
+      "Built a secure backend REST API using Hapi.js with modular architecture.",
+      "Implemented JWT authentication and refresh token workflows.",
+      "Integrated PostgreSQL for storing user and prediction data.",
+      "Supported real-time AI inference from the frontend (TensorFlow.js).",
+      "Collaborated with AI and frontend teams to align API flows and improve system reliability."
+    ],
+    href: "https://github.com/CC25CF093",
+    logo: "",
+    image: "/assets/projects/tabir-homepage.png",
+    tags: [
+      {
+        id: 1,
+        name: "HTML",
+        path: "/assets/logos/html5.svg",
+      },
+      {
+        id: 2,
+        name: "JavaScripts",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 3,
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 4,
+        name: "Hapi.js",
+        path: "/assets/logos/hapi.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Gebung - Personal Finance App",
+    description:
+      "A simple and intuitive finance app for tracking expenses, viewing history, receiving spending limit alerts, and generating AI-based expense predictions.",
+    subDescription: [
+      "Built with Room Database for local offline transaction storage.",
+      "Implemented MVVM + LiveData for clean and maintainable architecture.",
+      "Used Coroutines for smooth background processing.",
+      "Integrated TensorFlow Lite to generate spending predictions.",
+      "Visualized data with MPAndroidChart for better financial insights."
+    ],
+    href: "https://github.com/xryar/Gebung",
+    logo: "",
+    image: "/assets/projects/gebung.png",
+    tags: [
+      {
+        id: 1,
+        name: "Kotlin",
+        path: "/assets/logos/kotlin.svg",
+      },
+      {
+        id: 2,
+        name: "Android App",
+        path: "/assets/logos/android.svg",
+      },
+      {
+        id: 3,
+        name: "TFLite",
+        path: "/assets/logos/tflite.svg",
+      },
+      {
+        id: 4,
+        name: "Firebase",
+        path: "/assets/logos/firebase.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
     title: "E-Commerce Backend Service with Golang GRPC",
     description:
       "A high-performance e-commerce backend built using Golang with a gRPC-based architecture. The system includes product, user, cart, and order management, fully integrated with Supabase PostgreSQL and Xendit Payment Gateway for secure and seamless online transactions.",
@@ -78,45 +154,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
-    title: "Tabir (Tangan Bicara)",
-    description:
-      "An AI-driven web application that translates sign language into real-time text using Computer Vision and Deep Learning. I developed the backend system using Hapi.js to handle authentication, data management, and real-time prediction integration.",
-    subDescription: [
-      "Built a secure backend REST API using Hapi.js with modular architecture.",
-      "Implemented JWT authentication and refresh token workflows.",
-      "Integrated PostgreSQL for storing user and prediction data.",
-      "Supported real-time AI inference from the frontend (TensorFlow.js).",
-      "Collaborated with AI and frontend teams to align API flows and improve system reliability."
-    ],
-    href: "https://github.com/CC25CF093",
-    logo: "",
-    image: "/assets/projects/tabir-homepage.png",
-    tags: [
-      {
-        id: 1,
-        name: "HTML",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 2,
-        name: "JavaScripts",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 3,
-        name: "Tailwind CSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-      {
-        id: 4,
-        name: "Hapi.js",
-        path: "/assets/logos/hapi.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
+    id: 5,
     title: "InventarisHub",
     description:
       "InventarisHub is an Android-based inventory management application designed to help users efficiently manage items, track stock, and view detailed usage history. The app is built with modern Android development tools and follows clean architectural patterns to ensure scalability and maintainability.",
@@ -140,44 +178,6 @@ export const myProjects = [
         id: 2,
         name: "Android App",
         path: "/assets/logos/android.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Gebung - Personal Finance App",
-    description:
-      "A simple and intuitive finance app for tracking expenses, viewing history, receiving spending limit alerts, and generating AI-based expense predictions.",
-    subDescription: [
-      "Built with Room Database for local offline transaction storage.",
-      "Implemented MVVM + LiveData for clean and maintainable architecture.",
-      "Used Coroutines for smooth background processing.",
-      "Integrated TensorFlow Lite to generate spending predictions.",
-      "Visualized data with MPAndroidChart for better financial insights."
-    ],
-    href: "https://github.com/xryar/Gebung",
-    logo: "",
-    image: "/assets/projects/gebung.png",
-    tags: [
-      {
-        id: 1,
-        name: "Kotlin",
-        path: "/assets/logos/kotlin.svg",
-      },
-      {
-        id: 2,
-        name: "Android App",
-        path: "/assets/logos/android.svg",
-      },
-      {
-        id: 3,
-        name: "TFLite",
-        path: "/assets/logos/tflite.svg",
-      },
-      {
-        id: 4,
-        name: "Firebase",
-        path: "/assets/logos/firebase.svg",
       },
     ],
   },
