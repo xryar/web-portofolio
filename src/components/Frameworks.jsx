@@ -13,9 +13,13 @@ export function Frameworks() {
     "javascript",
     "hapi",
     "react",
-    "sqlite",
+    "firebase",
     "tailwindcss",
     "vitejs",
+    "android",
+    "supabase",
+    "tflite",
+    "postgresql",
   ]
 
   return (
