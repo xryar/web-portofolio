@@ -138,7 +138,7 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "Android",
+        name: "Android App",
         path: "/assets/logos/android.svg",
       },
     ],
@@ -155,7 +155,7 @@ export const myProjects = [
       "Integrated TensorFlow Lite to generate spending predictions.",
       "Visualized data with MPAndroidChart for better financial insights."
     ],
-    href: "",
+    href: "https://github.com/xryar/Gebung",
     logo: "",
     image: "/assets/projects/gebung.png",
     tags: [
@@ -222,19 +222,14 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
+    name: "Github",
+    href: "https://github.com/xryar",
+    icon: "/assets/socials/github.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/aryarizkiandaru/",
     icon: "/assets/socials/linkedIn.svg",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
-    icon: "/assets/socials/instagram.svg",
   },
 ];
 
