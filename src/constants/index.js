@@ -185,14 +185,14 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "Github",
-    href: "https://github.com/xryar",
-    icon: "/assets/socials/github.svg",
-  },
-  {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/aryarizkiandaru/",
     icon: "/assets/socials/linkedIn.svg",
+  },
+  {
+    name: "Github",
+    href: "https://github.com/xryar",
+    icon: "/assets/socials/github-white.svg",
   },
 ];
 
