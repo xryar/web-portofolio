@@ -14,27 +14,27 @@ export const myProjects = [
     ],
     href: "https://github.com/xryar/golang-online-soccer-field",
     logo: "",
-    image: "/assets/projects/golang-online-soccer-field-flow.png",
+    image: "assets/projects/golang-online-soccer-field-flow.png",
     tags: [
       {
         id: 1,
         name: "Go",
-        path: "/assets/logos/go.svg",
+        path: "assets/logos/go.svg",
       },
       {
         id: 2,
         name: "Postgre SQL",
-        path: "/assets/logos/postgresql.svg",
+        path: "assets/logos/postgresql.svg",
       },
       {
         id: 3,
         name: "Google Cloud",
-        path: "/assets/logos/googlecloud.svg",
+        path: "assets/logos/googlecloud.svg",
       },
       {
         id: 4,
         name: "Apache Kafka",
-        path: "/assets/logos/kafka.png",
+        path: "assets/logos/kafka.png",
       },
     ],
   },
@@ -53,27 +53,27 @@ export const myProjects = [
     ],
     href: "https://github.com/xryar/clean-furniture-backend-service",
     logo: "",
-    image: "/assets/projects/golang-grpc.png",
+    image: "assets/projects/golang-grpc.png",
     tags: [
       {
         id: 1,
         name: "Go",
-        path: "/assets/logos/go.svg",
+        path: "assets/logos/go.svg",
       },
       {
         id: 2,
         name: "Supabase",
-        path: "/assets/logos/supabase.svg",
+        path: "assets/logos/supabase.svg",
       },
       {
         id: 3,
         name: "Postgre SQL",
-        path: "/assets/logos/postgresql.svg",
+        path: "assets/logos/postgresql.svg",
       },
       {
         id: 4,
         name: "gRPC",
-        path: "/assets/logos/grpc.svg",
+        path: "assets/logos/grpc.svg",
       },
     ],
   },
@@ -91,27 +91,27 @@ export const myProjects = [
     ],
     href: "https://github.com/CC25CF093",
     logo: "",
-    image: "/assets/projects/tabir-homepage.png",
+    image: "assets/projects/tabir-homepage.png",
     tags: [
       {
         id: 1,
         name: "HTML",
-        path: "/assets/logos/html5.svg",
+        path: "assets/logos/html5.svg",
       },
       {
         id: 2,
         name: "JavaScripts",
-        path: "/assets/logos/javascript.svg",
+        path: "assets/logos/javascript.svg",
       },
       {
         id: 3,
         name: "Tailwind CSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "assets/logos/tailwindcss.svg",
       },
       {
         id: 4,
         name: "Hapi.js",
-        path: "/assets/logos/hapi.svg",
+        path: "assets/logos/hapi.svg",
       },
     ],
   },
@@ -129,27 +129,27 @@ export const myProjects = [
     ],
     href: "https://github.com/xryar/Gebung",
     logo: "",
-    image: "/assets/projects/gebung.png",
+    image: "assets/projects/gebung.png",
     tags: [
       {
         id: 1,
         name: "Kotlin",
-        path: "/assets/logos/kotlin.svg",
+        path: "assets/logos/kotlin.svg",
       },
       {
         id: 2,
         name: "Android App",
-        path: "/assets/logos/android.svg",
+        path: "assets/logos/android.svg",
       },
       {
         id: 3,
         name: "TFLite",
-        path: "/assets/logos/tflite.svg",
+        path: "assets/logos/tflite.svg",
       },
       {
         id: 4,
         name: "Firebase",
-        path: "/assets/logos/firebase.svg",
+        path: "assets/logos/firebase.svg",
       },
     ],
   },
@@ -167,17 +167,17 @@ export const myProjects = [
     ],
     href: "https://github.com/xryar/Inventaris-App",
     logo: "",
-    image: "/assets/projects/inventaris-app.png",
+    image: "assets/projects/inventaris-app.png",
     tags: [
       {
         id: 1,
         name: "Kotlin",
-        path: "/assets/logos/kotlin.svg",
+        path: "assets/logos/kotlin.svg",
       },
       {
         id: 2,
         name: "Android App",
-        path: "/assets/logos/android.svg",
+        path: "assets/logos/android.svg",
       },
     ],
   },
@@ -187,12 +187,12 @@ export const mySocials = [
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/aryarizkiandaru/",
-    icon: "/assets/socials/linkedIn.svg",
+    icon: "assets/socials/linkedIn.svg",
   },
   {
     name: "Github",
     href: "https://github.com/xryar",
-    icon: "/assets/socials/github-white.svg",
+    icon: "assets/socials/github-white.svg",
   },
 ];
 
