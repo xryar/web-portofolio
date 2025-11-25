@@ -2,6 +2,7 @@ import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import Alert from "../components/Alert"
 import { Particles } from "../components/Particles"
+import { mySocials } from "../constants"
 
 const Contact = () => {
   const serviceKey = import.meta.env.VITE_EMAIL_SERVICE_KEY
@@ -61,7 +62,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="relative flex items-center scroll-mt-24 c-space section-spacing">
+    <section id="contact" className="relative flex flex-col items-center c-space section-spacing">
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
@@ -69,7 +70,9 @@ const Contact = () => {
         color={"#ffffff"}
         refresh
       />
+      
       {showAlert && <Alert type={alertType} text={alertMessage} />}
+      
       <div className="flex flex-col items-center justify-center max-w-md 
         p-5 mx-auto border border-white/10 rounded-2xl bg-primary"
       >
@@ -133,6 +136,23 @@ const Contact = () => {
             {!isLoading ? "Send" : "Sending..."}
           </button>
         </form>
+      </div>
+
+      <div className="flex flex-col w-full max-w-md gap-4 mx-auto mt-8">
+        <div className="flex items-center justify-center gap-4">
+          {mySocials.map((item) => (
+            <a 
+              className="flex items-center justify-center w-1/2 gap-2 px-4 py-3 font-medium text-white transition-all border rounded-lg border-white/20 hover:bg-white/10 hover:scale-[1.03]" 
+              key={item.name} 
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.name}
+              <img src={item.icon} alt={item.name} className="w-5 h-5" />
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   )
